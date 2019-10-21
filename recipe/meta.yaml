@@ -1,4 +1,4 @@
-{% set version = "2.0.4" %}
+{% set version = '2.0.4' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -13,7 +13,6 @@ source:
   sha256: 3467d5a8a66ed40bca01d4c328495b2ff94fc01c40a5deab6b1d191152b21b9e
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
   number: 0
   noarch: generic
@@ -23,7 +22,7 @@ build:
 
 requirements:
   build:
-
+    - {{posix}}zip               # [win]
   host:
     - r-base
   run:
@@ -36,18 +35,38 @@ test:
 
 about:
   home: https://bitbucket.org/mehrad_mahmoudian/varhandle
-  license: GPL (>= 2)
+  license: GPL-2
   summary: Variables are the fundamental parts of each programming language but handling them
-    might be frustrating for programmers from time to time. This package contains some
-    functions to help user (especially data explorers) to make more sense of their variables
-    and take the most out of variables and hardware resources. These functions are written,
-    collected and crafted over 5 years of experience in statistical data analysis on
-    high-dimensional data and for each of them there was a need. Functions in this package
-    are suppose to be efficient and easy to use, hence they will be frequently updated
-    to make them more convenient.
-  license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    efficiently might be frustrating for programmers. This package contains some functions
+    to help user (especially data explorers) to make more sense of their variables and
+    take the most out of variables and hardware resources. These functions are written,
+    collected and crafted over 7 years of experience in statistical data analysis on
+    high-dimensional data, and for each of them there was a need. Functions in this
+    package are suppose to be efficient and easy to use, hence they will be frequently
+    updated to make them more convenient.
+  license_family: GPL2
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
     - conda-forge/r
+
+# Package: varhandle
+# Version: 2.0.4
+# Date: 2019-10-21
+# Title: Functions for Robust Variable Handling
+# Authors@R: c(person("Mehrad", "Mahmoudian", role = c("aut", "cre"), email = "m.mahmoudian@gmail.com"))
+# Author: Mehrad Mahmoudian [aut, cre]
+# Maintainer: Mehrad Mahmoudian <m.mahmoudian@gmail.com>
+# Depends: R (>= 3.0.1),
+# Imports: utils, graphics
+# Suggests:
+# Description: Variables are the fundamental parts of each programming language but handling them efficiently might be frustrating for programmers. This package contains some functions to help user (especially data explorers) to make more sense of their variables and take the most out of variables and hardware resources. These functions are written, collected and crafted over 7 years of experience in statistical data analysis on high-dimensional data, and for each of them there was a need. Functions in this package are suppose to be efficient and easy to use, hence they will be frequently updated to make them more convenient.
+# License: GPL (>= 2)
+# URL: https://bitbucket.org/mehrad_mahmoudian/varhandle
+# BugReports: https://bitbucket.org/mehrad_mahmoudian/varhandle/issues
+# NeedsCompilation: no
+# Packaged: 2019-10-21 17:12:21 UTC; mehrad
+# Repository: CRAN
+# Date/Publication: 2019-10-21 17:30:02 UTC
