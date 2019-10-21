@@ -3,11 +3,11 @@ About r-varhandle
 
 Home: https://bitbucket.org/mehrad_mahmoudian/varhandle
 
-Package license: GPL (>= 2)
+Package license: GPL-2
 
 Feedstock license: BSD 3-Clause
 
-Summary: Variables are the fundamental parts of each programming language but handling them might be frustrating for programmers from time to time. This package contains some functions to help user (especially data explorers) to make more sense of their variables and take the most out of variables and hardware resources. These functions are written, collected and crafted over 5 years of experience in statistical data analysis on high-dimensional data and for each of them there was a need. Functions in this package are suppose to be efficient and easy to use, hence they will be frequently updated to make them more convenient.
+Summary: Variables are the fundamental parts of each programming language but handling them efficiently might be frustrating for programmers. This package contains some functions to help user (especially data explorers) to make more sense of their variables and take the most out of variables and hardware resources. These functions are written, collected and crafted over 7 years of experience in statistical data analysis on high-dimensional data, and for each of them there was a need. Functions in this package are suppose to be efficient and easy to use, hence they will be frequently updated to make them more convenient.
 
 
 
