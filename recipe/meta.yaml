@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://bitbucket.org/mehrad_mahmoudian/varhandle
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: Variables are the fundamental parts of each programming language but handling them
     efficiently might be frustrating for programmers. This package contains some functions
     to help user (especially data explorers) to make more sense of their variables and
