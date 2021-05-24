@@ -3,7 +3,7 @@ About r-varhandle
 
 Home: https://bitbucket.org/mehrad_mahmoudian/varhandle
 
-Package license: GPL-2
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-varhandle-feedstock/blob/master/LICENSE.txt)
 
