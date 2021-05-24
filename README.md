@@ -3,13 +3,11 @@ About r-varhandle
 
 Home: https://bitbucket.org/mehrad_mahmoudian/varhandle
 
-Package license: GPL-2
+Package license: GPL-2.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-varhandle-feedstock/blob/master/LICENSE.txt)
 
 Summary: Variables are the fundamental parts of each programming language but handling them efficiently might be frustrating for programmers. This package contains some functions to help user (especially data explorers) to make more sense of their variables and take the most out of variables and hardware resources. These functions are written, collected and crafted over 7 years of experience in statistical data analysis on high-dimensional data, and for each of them there was a need. Functions in this package are suppose to be efficient and easy to use, hence they will be frequently updated to make them more convenient.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-varhandle` from the `conda-forge` channel can be achieved by addin
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-varhandle` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
